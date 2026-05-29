@@ -388,6 +388,114 @@
             font-weight: 300;
         }
 
+                /* Pricing Section */
+        .pricing {
+            padding: 100px 0;
+            background: #020202;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(0, 220, 225, 0.3);
+        }
+
+        .pricing-card.premium {
+            background: linear-gradient(180deg, rgba(0, 220, 225, 0.05) 0%, var(--card-bg) 100%);
+            border: 1px solid rgba(0, 220, 225, 0.4);
+            transform: scale(1.05);
+        }
+
+        .pricing-card.premium:hover {
+            transform: scale(1.05) translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 220, 225, 0.15);
+        }
+
+        .recommended-badge {
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            color: #000;
+            font-size: 12px;
+            font-weight: 800;
+            padding: 6px 16px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .pricing-card h3 {
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .price {
+            font-size: 48px;
+            font-weight: 900;
+            font-family: 'Outfit', sans-serif;
+            color: var(--text-color);
+            margin-bottom: 24px;
+        }
+
+        .price span {
+            font-size: 16px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .pricing-features {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-features li::before {
+            content: '✓';
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-card.premium {
+                transform: scale(1);
+            }
+            .pricing-card.premium:hover {
+                transform: translateY(-10px);
+            }
+        }
+
         /* Tech Spec Section */
         .specs {
             padding: 100px 0;
@@ -493,6 +601,7 @@
             </div>
             <nav>
                 <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
                 <a href="#specs">Specs</a>
                 <a href="support.html">Support</a>
                 <a href="privacy.html">Privacy</a>
@@ -596,6 +705,45 @@
         </div>
     </section>
 
+        <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple Pricing.</h2>
+                <p class="section-subtitle">Try it for free. Unlock the full potential when you're ready.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card free">
+                    <h3>Free Trial</h3>
+                    <div class="price">$0</div>
+                    <ul class="pricing-features">
+                        <li>Capture up to 10 photos</li>
+                        <li>Experience all pro features</li>
+                    </ul>
+                </div>
+                <div class="pricing-card premium">
+                    <div class="recommended-badge">Most Popular</div>
+                    <h3>Monthly Premium</h3>
+                    <div class="price">$1.99<span>/mo</span></div>
+                    <ul class="pricing-features">
+                        <li>Unlimited captures</li>
+                        <li>Unlock all pro features</li>
+                        <li>Cancel anytime</li>
+                    </ul>
+                </div>
+                <div class="pricing-card lifetime">
+                    <h3>Lifetime License</h3>
+                    <div class="price">$9.99<span>/once</span></div>
+                    <ul class="pricing-features">
+                        <li>Unlimited captures</li>
+                        <li>Yours forever</li>
+                        <li>No subscription fees</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Technical Specs Section -->
     <section class="specs" id="specs">
         <div class="container">
@@ -667,7 +815,8 @@
                 </div>
                 <div class="footer-links">
                     <a href="#features">Features</a>
-                    <a href="#specs">Specs</a>
+                    <a href="#pricing">Pricing</a>
+                <a href="#specs">Specs</a>
                     <a href="support.html">Support</a>
                     <a href="privacy.html">Privacy</a>
                 </div>
