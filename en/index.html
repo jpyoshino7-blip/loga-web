@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loga - 究極の10-bit Apple Logカメラアプリ</title>
-    <meta name="description" content="iPhone 15 Pro以降のApple Log撮影に対応。リアルタイム3D LUTプレビュー、マニュアル操作、TIFFオリジナル保存を備えたプロ仕様の写真撮影カメラアプリ。">
+    <title>Loga - Ultimate 10-bit Apple Log Still Camera</title>
+    <meta name="description" content="Shoot raw 10-bit Apple Log stills on iPhone 15 Pro & newer. Features real-time 3D LUT previews, manual controls, and uncompressed 10-bit TIFF original saves.">
     <!-- SEO & OGP -->
-    <meta property="og:title" content="Loga - 究極の10-bit Apple Logカメラアプリ">
-    <meta property="og:description" content="リアルタイム3D LUTプレビューと高度なマニュアル露出コントロールを備えた、プロフェッショナルなApple Logスチルカメラ。">
+    <meta property="og:title" content="Loga - Ultimate 10-bit Apple Log Still Camera">
+    <meta property="og:description" content="Professional Apple Log still capture with real-time 3D LUT previews and manual exposure control.">
     <meta property="og:type" content="website">
     
     <!-- Google Fonts -->
@@ -21,7 +21,7 @@
             --text-color: #f5f5f7;
             --text-secondary: #86868b;
             --accent-color: #00dce1;
-            --accent-cyan: #00dce1;
+            --accent-cyan: #00f0ff;
             --card-bg: rgba(20, 20, 25, 0.7);
             --border-color: rgba(255, 255, 255, 0.08);
             --gradient-primary: linear-gradient(135deg, #00dce1 0%, #0096b4 100%);
@@ -106,6 +106,7 @@
 
         nav {
             display: flex;
+            align-items: center;
             gap: 28px;
         }
 
@@ -129,7 +130,6 @@
             font-weight: 600;
             color: var(--text-color) !important;
             background: rgba(255, 255, 255, 0.05);
-            text-decoration: none !important;
         }
 
         .lang-switch:hover {
@@ -217,7 +217,7 @@
 
         .btn-primary {
             background: var(--gradient-primary);
-            color: #000;
+            color: #fff;
             box-shadow: 0 4px 20px rgba(0, 220, 225, 0.25);
         }
 
@@ -371,7 +371,7 @@
 
         .feature-card:hover .feature-icon {
             background: var(--gradient-primary);
-            color: #000;
+            color: #fff;
             box-shadow: 0 0 15px rgba(0, 220, 225, 0.3);
             border-color: transparent;
         }
@@ -479,8 +479,8 @@
             font-size: 12px;
         }
     </style>
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 </head>
 <body>
 
@@ -488,15 +488,15 @@
     <header>
         <div class="container header-content">
             <div class="logo">
-                <img src="favicon.png" class="logo-icon" alt="Loga">
+                <img src="../favicon.png" class="logo-icon" alt="Loga">
                 Loga
             </div>
             <nav>
-                <a href="#features">機能</a>
-                <a href="#specs">技術仕様</a>
-                <a href="support.html">サポート</a>
-                <a href="privacy.html">プライバシーポリシー</a>
-                <a href="en/index.html" class="lang-switch">EN</a>
+                <a href="#features">Features</a>
+                <a href="#specs">Specs</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="../index.html" class="lang-switch">JA</a>
             </nav>
         </div>
     </header>
@@ -504,32 +504,32 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <span class="badge" id="badge-compatibility">iPhone 15 Pro / 15 Pro Max 以降推奨</span>
-            <h1 class="hero-title">10-bit の真価を引き出す。<br>Apple Log スチルカメラ。</h1>
+            <span class="badge" id="badge-compatibility">Recommended: iPhone 15 Pro / Pro Max & Newer</span>
+            <h1 class="hero-title">Unlock the True Power of 10-bit.<br>Apple Log Still Camera.</h1>
             <p class="hero-description">
-                「Loga」は、iPhone Proシリーズが持つ「Apple Log」10-bitスチルキャプチャのポテンシャルを最大限に解放する、プロ仕様のカメラアプリケーションです。
+                "Loga" is a professional still camera application designed to fully liberate the potential of 10-bit Apple Logスチルキャプチャ on supported iPhone Pro series.
             </p>
             <div class="cta-buttons">
                 <a href="#" class="btn btn-primary" id="btn-download">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="vertical-align: middle;"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.57 2.95-1.39z"/></svg>
-                    App Store でダウンロード
+                    Download on the App Store
                 </a>
-                <a href="#features" class="btn btn-secondary">機能を見る</a>
+                <a href="#features" class="btn btn-secondary">Explore Features</a>
             </div>
 
                         <!-- Screenshot Showcase -->
             <div class="screenshot-showcase">
                 <div class="screenshot-wrapper">
-                    <img src="img/screenshot1.png" class="screenshot-img" alt="Loga Screenshot 1">
+                    <img src="../img/screenshot1.png" class="screenshot-img" alt="Loga Screenshot 1">
                 </div>
                 <div class="screenshot-wrapper">
-                    <img src="img/screenshot2.png" class="screenshot-img" alt="Loga Screenshot 2">
+                    <img src="../img/screenshot2.png" class="screenshot-img" alt="Loga Screenshot 2">
                 </div>
                 <div class="screenshot-wrapper">
-                    <img src="img/screenshot3.png" class="screenshot-img" alt="Loga Screenshot 3">
+                    <img src="../img/screenshot3.png" class="screenshot-img" alt="Loga Screenshot 3">
                 </div>
                 <div class="screenshot-wrapper">
-                    <img src="img/screenshot4.png" class="screenshot-img" alt="Loga Screenshot 4">
+                    <img src="../img/screenshot4.png" class="screenshot-img" alt="Loga Screenshot 4">
                 </div>
             </div>
         </div>
@@ -539,57 +539,57 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">極限のスチル表現へ。</h2>
-                <p class="section-subtitle">プロフェッショナルが求める高度な機能を、極めてスマートなUIに凝縮しました。</p>
+                <h2 class="section-title">Peak Still Expression.</h2>
+                <p class="section-subtitle">Advanced manual camera controls wrapped in an incredibly minimal, fluid UI.</p>
             </div>
 
             <div class="feature-grid">
                 <!-- Feature 1 -->
                 <div class="feature-card">
                     <div class="feature-icon">✨</div>
-                    <h3 class="feature-title">リアルタイム 3D LUT プレビュー</h3>
+                    <h3 class="feature-title">Real-time 3D LUT Previews</h3>
                     <p class="feature-desc">
-                        Metalシェーダーによる超高速処理で、Apple Logのフラットな映像に対してリアルタイムで3D LUTを適用した美しいプレビューを表示。仕上がりを完璧にイメージしながら撮影できます。
+                        Powered by a zero-latency Metal shader preview engine. Map a 3D LUT instantly over the flat, desaturated Apple Log stream to compose your shot with the finished color grading in mind.
                     </p>
                 </div>
                 <!-- Feature 2 -->
                 <div class="feature-card">
                     <div class="feature-icon">💾</div>
-                    <h3 class="feature-title">10-bit TIFF オリジナル保存</h3>
+                    <h3 class="feature-title">10-bit Uncompressed TIFF Saves</h3>
                     <p class="feature-desc">
-                        LUT適用済みの美麗なJPEGと同時に、無圧縮・10-bit記録のオリジナルApple Log情報を極限まで保持した「高品質TIFFフォーマット」での二重保存に対応。RAW現像の最高クオリティを提供します。
+                        Save a beautiful, ready-to-share graded JPEG alongside a pristine, uncompressed 10-bit/10-bit TIFF original Apple Log file. Preserves maximum dynamic range for your post-processing pipeline.
                     </p>
                 </div>
                 <!-- Feature 3 -->
                 <div class="feature-card">
                     <div class="feature-icon">📂</div>
-                    <h3 class="feature-title">カスタム LUT インポート</h3>
+                    <h3 class="feature-title">Custom 3D LUT Imports</h3>
                     <p class="feature-desc">
-                        ファイルアプリと連携し、お気に入りの `.cube` 形式の3D LUTをアプリに無制限にインポート可能。独自の映画的カラーグレーディングプリセットをその場でシミュレートできます。
+                        Seamlessly import industry-standard `.cube` LUT files directly from the Files app. Simulate and test your own cinematic color grading presets instantly in the field.
                     </p>
                 </div>
                 <!-- Feature 4 -->
                 <div class="feature-card">
                     <div class="feature-icon">🎛</div>
-                    <h3 class="feature-title">完全マニュアル露出・ホワイトバランス</h3>
+                    <h3 class="feature-title">Manual Exposure & White Balance</h3>
                     <p class="feature-desc">
-                        直感的なスライダーコントロールで、色温度（3000K〜8000K）、露出補正値（-8.0EV〜+8.0EV）を完全マニュアル制御。シーンに応じた意図通りの光のコントラストを捉えます。
+                        Take full control of your scene. Adjust White Balance temperature (3000K to 8000K) and dial in exact Exposure Compensation (-8.0EV to +8.0EV) with responsive manual sliders.
                     </p>
                 </div>
                 <!-- Feature 5 -->
                 <div class="feature-card">
                     <div class="feature-icon">🔍</div>
-                    <h3 class="feature-title">マルチレンズ・光学ズームサポート</h3>
+                    <h3 class="feature-title">Multi-Lens Optical Zoom Support</h3>
                     <p class="feature-desc">
-                        トリプル/デュアルカメラのポテンシャルを引き出し、0.5x（超広角）、1.0x（広角）、2.0x、5.0x（望遠）のシームレスな光学・デジタルズームに対応。歪みのない極上のパースを狙い撃ちます。
+                        Leverage your iPhone Pro's advanced hardware. Seamlessly toggle between ultra-wide (0.5x), wide (1.0x), 2.0x, and telephoto (5.0x) lenses for distortion-free, high-fidelity perspectives.
                     </p>
                 </div>
                 <!-- Feature 6 -->
                 <div class="feature-card">
                     <div class="feature-icon">📐</div>
-                    <h3 class="feature-title">アスペクト比マスク ＆ グリッド</h3>
+                    <h3 class="feature-title">Cinematic Masks & Composition Grid</h3>
                     <p class="feature-desc">
-                        16:9、4:3、スクエア（1:1）に加え、映画品質の2.35:1アナモルフィック表示マスクと3分割グリッドを搭載。完璧な構図構築を強力にサポートします。
+                        Compose with cinematic intent. Supports standard 16:9, 4:3, square 1:1, and anamorphic 2.35:1 aspect ratio framing masks combined with a precise 3-part rule-of-thirds grid.
                     </p>
                 </div>
             </div>
@@ -600,56 +600,56 @@
     <section class="specs" id="specs">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">技術仕様</h2>
-                <p class="section-subtitle">Loga の卓越したキャプチャ仕様スペック。</p>
+                <h2 class="section-title">Technical Specifications</h2>
+                <p class="section-subtitle">High-fidelity capture specifications of Loga.</p>
             </div>
 
             <div class="spec-grid">
                 <div>
-                    <h3 style="font-size: 28px; margin-bottom: 24px;">スチル・パイプライン</h3>
+                    <h3 style="font-size: 28px; margin-bottom: 24px;">Still Capture Pipeline</h3>
                     <ul class="spec-list">
                         <li class="spec-item">
                             <span class="spec-check">✓</span>
                             <div class="spec-content">
-                                <h4>10-bit YpCbCr 記録</h4>
-                                <p>AVFoundationのネイティブ広色域Apple Logカラースペースで10-bit映像データストリームからダイレクトキャプチャ。</p>
+                                <h4>10-bit YpCbCr Recording</h4>
+                                <p>Captures directly from the native wide-color Apple Log sensor stream utilizing standard AVFoundation pipelines.</p>
                             </div>
                         </li>
                         <li class="spec-item">
                             <span class="spec-check">✓</span>
                             <div class="spec-content">
-                                <h4>Core Image プレビューエンジン</h4>
-                                <p>CoreImageおよびMetalを活用したピクセルバッファによるゼロレイテンシでの3D LUT色空間マッピング。</p>
+                                <h4>Metal 2 Preview Pipeline</h4>
+                                <p>Applies real-time 3D LUT pixel buffer transformations utilizing optimized CoreImage and Metal rendering destinations.</p>
                             </div>
                         </li>
                         <li class="spec-item">
                             <span class="spec-check">✓</span>
                             <div class="spec-content">
-                                <h4>非可逆/可逆 ハイブリッド保存</h4>
-                                <p>LUT適用済みのRGB JPEG画像（カメラロール直行）と、ログ保存用高品質TIFFファイルを完全に個別に管理・保存。</p>
+                                <h4>Lossless/Lossy Dual Save</h4>
+                                <p>Completely separates the graded RGB JPEG save (saved directly to Camera Roll) and the uncompressed raw 10-bit TIFF archive.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h3 style="font-size: 28px; margin-bottom: 24px;">システム要件</h3>
+                    <h3 style="font-size: 28px; margin-bottom: 24px;">System Requirements</h3>
                     <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
                         <tr style="border-bottom: 1px solid var(--border-color); height: 50px;">
-                            <td style="font-weight: 600; width: 120px;">推奨デバイス</td>
-                            <td style="color: var(--text-secondary);">iPhone 15 Pro / 15 Pro Max 以降のProシリーズ機種</td>
+                            <td style="font-weight: 600; width: 140px;">Recommended Device</td>
+                            <td style="color: var(--text-secondary);">iPhone 15 Pro / 15 Pro Max & newer Pro-tier models</td>
                         </tr>
                         <tr style="border-bottom: 1px solid var(--border-color); height: 50px;">
-                            <td style="font-weight: 600;">必須OS</td>
-                            <td style="color: var(--text-secondary);">iOS 17.0 以上</td>
+                            <td style="font-weight: 600;">Minimum OS</td>
+                            <td style="color: var(--text-secondary);">iOS 17.0 or higher</td>
                         </tr>
                         <tr style="border-bottom: 1px solid var(--border-color); height: 50px;">
-                            <td style="font-weight: 600;">カメラ要件</td>
-                            <td style="color: var(--text-secondary);">Apple Log（Apple Log Color Space）対応の背面カメラシステム</td>
+                            <td style="font-weight: 600;">Hardware Camera</td>
+                            <td style="color: var(--text-secondary);">Rear camera system supporting native Apple Log Color Space stream</td>
                         </tr>
                         <tr style="border-bottom: 1px solid var(--border-color); height: 50px;">
-                            <td style="font-weight: 600;">ストレージ空き</td>
-                            <td style="color: var(--text-secondary);">TIFFオリジナル保存機能を使用する場合、空き容量を推奨（1ファイルあたり約20MB〜）</td>
+                            <td style="font-weight: 600;">Storage Capacity</td>
+                            <td style="color: var(--text-secondary);">High capacity recommended if using TIFF mode (approx. 20MB+ per frame)</td>
                         </tr>
                     </table>
                 </div>
@@ -662,14 +662,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">
-                    <img src="favicon.png" class="logo-icon" alt="Loga">
+                    <img src="../favicon.png" class="logo-icon" alt="Loga">
                     Loga
                 </div>
                 <div class="footer-links">
-                    <a href="#features">機能</a>
-                    <a href="#specs">仕様</a>
-                    <a href="support.html">サポート</a>
-                    <a href="privacy.html">プライバシーポリシー</a>
+                    <a href="#features">Features</a>
+                    <a href="#specs">Specs</a>
+                    <a href="support.html">Support</a>
+                    <a href="privacy.html">Privacy</a>
                 </div>
             </div>
             <div class="copyright">

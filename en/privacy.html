@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>プライバシーポリシー - Loga</title>
-    <meta name="description" content="Loga のプライバシーポリシー。本アプリはカメラおよび写真ライブラリへのアクセスを行いますが、一切のデータを外部へ収集・送信しません。">
+    <title>Privacy Policy - Loga</title>
+    <meta name="description" content="Privacy Policy for Loga. We access your camera and photo library locally and never collect or transmit any of your data externally.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,21 +94,6 @@
             color: var(--accent-color);
         }
 
-        .lang-switch {
-            border: 1px solid var(--border-color);
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--text-color) !important;
-            background: rgba(255, 255, 255, 0.05);
-            text-decoration: none !important;
-        }
-
-        .lang-switch:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-
         /* Content */
         .content {
             padding: 80px 0 100px 0;
@@ -173,8 +158,8 @@
             text-align: center;
         }
     </style>
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 </head>
 <body>
 
@@ -182,75 +167,72 @@
     <header>
         <div class="container header-content">
             <a href="index.html" class="logo">
-                <img src="favicon.png" class="logo-icon" alt="Loga">
+                <img src="../favicon.png" class="logo-icon" alt="Loga">
                 Loga
             </a>
-            <div style="display: flex; align-items: center; gap: 20px;">
-                <a href="index.html" class="back-link">&larr; ホームに戻る</a>
-                <a href="en/privacy.html" class="lang-switch">EN</a>
-            </div>
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <div class="container content">
-        <h1>プライバシーポリシー</h1>
-        <div class="last-updated">最終更新日: 2026年5月23日</div>
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last Updated: May 26, 2026</div>
 
         <section>
             <p>
-                「Loga」（以下、本アプリ）は、ユーザーのプライバシーの重要性を深く理解し、その保護に最大限の努力を払っています。本ポリシーは、本アプリがユーザーの個人情報をどのように取り扱うかについて説明するものです。
+                Loga (referred to as "the App", "we", "us", or "our") deeply respects the privacy of our users and is committed to protecting it. This Privacy Policy describes how we handle information in connection with your use of the App.
             </p>
         </section>
 
         <section>
-            <h2>1. 個人情報の収集および送信について</h2>
+            <h2>1. No Collection or Transmission of Personal Data</h2>
             <p>
-                <strong>本アプリは、ユーザーの個人情報を一切収集、保存、または外部サーバーに送信することはありません。</strong>
+                <strong>The App does not collect, store, or transmit any of your personal data or images to any external servers or third parties.</strong>
             </p>
             <p>
-                本アプリは、完全オフラインで動作するスチルカメラアプリケーションです。撮影された画像データ、適用されたカスタムLUTデータ、設定情報などはすべてユーザーのデバイス内（ローカル）でのみ処理・保存され、当開発者を含め、いかなる第三者にも開示・共有されることはありません。
+                Loga operates entirely offline as a local utility camera. Your captured images, imported custom 3D LUT files, and configuration settings are processed and stored strictly within your local device. We have no access to your photos or any personal information.
             </p>
         </section>
 
         <section>
-            <h2>2. デバイスの権限利用について</h2>
+            <h2>2. Device Permissions Utilized</h2>
             <p>
-                本アプリの機能を提供するため、以下のアクセス権限を利用します。これらのデータはすべてローカルで処理され、外部に送信されることは決してありません。
+                To provide the App's core features, we request access to specific device capabilities. All data accessed remains local to your device and is never shared:
             </p>
             <ul>
                 <li>
-                    <strong>カメラへのアクセス (NSCameraUsageDescription)</strong><br>
-                    Apple Logを用いたリアルタイムのプレビュー表示および写真撮影を行うためにのみ使用します。
+                    <strong>Camera Access (NSCameraUsageDescription)</strong><br>
+                    Used exclusively to capture the Apple Log sensor stream, render real-time previews, and shoot still photographs.
                 </li>
                 <li>
-                    <strong>写真ライブラリへのアクセス (NSPhotoLibraryUsageDescription & NSPhotoLibraryAddUsageDescription)</strong><br>
-                    撮影した写真（LUT適用済み画像およびTIFF形式のオリジナル画像）をiPhoneの標準写真ライブラリに保存するため、またギャラリー画面で最新の撮影結果を表示するためにのみ使用します。
+                    <strong>Photo Library Access (NSPhotoLibraryUsageDescription & NSPhotoLibraryAddUsageDescription)</strong><br>
+                    Used exclusively to save captured images (LUT-applied JPEGs and uncompressed TIFF originals) to your device's native photo library, and to display your latest shot as a preview thumbnail.
                 </li>
             </ul>
         </section>
 
         <section>
-            <h2>3. 外部解析および広告について</h2>
+            <h2>3. No Third-Party Analytics or Advertising</h2>
             <p>
-                本アプリ内では、ユーザーの行動追跡を行う外部のアクセス解析ツール（Google Analytics、Firebaseなど）や、サードパーティの広告配信ネットワークは一切導入していません。これにより、バックグラウンドでの不要なデータ通信やトラッキングは一切発生しません。
+                The App does not integrate any third-party behavioral tracking libraries (such as Google Analytics, Firebase, or Flurry) or advertising SDKs. No background data transmissions or tracking activities occur when using the App.
             </p>
         </section>
 
         <section>
-            <h2>4. 本ポリシーの変更について</h2>
+            <h2>4. Changes to This Privacy Policy</h2>
             <p>
-                本アプリのアップデートやOS仕様の変更、法改正などに伴い、本ポリシーを予告なく変更することがあります。重要な変更が生じた場合には、アプリの説明欄またはウェブサイト上でお知らせします。
+                We may update this Privacy Policy from time to time to reflect changes in hardware support, OS specifications, or legal guidelines. Any material changes will be communicated through App Store descriptions or our website.
             </p>
         </section>
 
         <section>
-            <h2>5. お問い合わせ</h2>
+            <h2>5. Contact & Support</h2>
             <p>
-                プライバシーポリシーに関するご質問やご意見がございましたら、以下のサポートページよりお問い合わせください。
+                If you have any questions or concerns regarding this Privacy Policy, please feel free to reach out to us via our Support Page.
             </p>
             <p>
-                <a href="support.html" style="color: var(--accent-color); text-decoration: none;">&rarr; サポートページへ移動する</a>
+                <a href="support.html" style="color: var(--accent-color); text-decoration: none;">&rarr; Go to Support Page</a>
             </p>
         </section>
     </div>

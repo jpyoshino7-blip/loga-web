@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サポート - Loga</title>
-    <meta name="description" content="Loga のお問い合わせ・サポート。不具合報告やご要望はこちらから。よくある質問も掲載。">
+    <title>Support - Loga</title>
+    <meta name="description" content="Support and FAQs for Loga. Find bug reporting channels, feature request options, and common questions.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,21 +92,6 @@
 
         .back-link:hover {
             color: var(--accent-color);
-        }
-
-        .lang-switch {
-            border: 1px solid var(--border-color);
-            padding: 4px 10px;
-            border-radius: 12px;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--text-color) !important;
-            background: rgba(255, 255, 255, 0.05);
-            text-decoration: none !important;
-        }
-
-        .lang-switch:hover {
-            background: rgba(255, 255, 255, 0.1);
         }
 
         /* Content */
@@ -230,8 +215,8 @@
             text-align: center;
         }
     </style>
-    <link rel="icon" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../favicon.png">
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 </head>
 <body>
 
@@ -239,32 +224,29 @@
     <header>
         <div class="container header-content">
             <a href="index.html" class="logo">
-                <img src="favicon.png" class="logo-icon" alt="Loga">
+                <img src="../favicon.png" class="logo-icon" alt="Loga">
                 Loga
             </a>
-            <div style="display: flex; align-items: center; gap: 20px;">
-                <a href="index.html" class="back-link">&larr; ホームに戻る</a>
-                <a href="en/support.html" class="lang-switch">EN</a>
-            </div>
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
         </div>
     </header>
 
     <!-- Main Content -->
     <div class="container content">
-        <h1>カスタマーサポート</h1>
+        <h1>Customer Support</h1>
         <p class="support-intro">
-            「Loga」をご利用いただきありがとうございます。アプリの使用方法、不具合の報告、または機能のご要望についてのご案内窓口です。
+            Thank you for using Loga. If you have any inquiries, bug reports, or feature requests, we are here to help.
         </p>
 
         <section>
-            <h2>✉ お問い合わせ窓口</h2>
+            <h2>✉ Contact Support</h2>
             <div class="contact-methods">
                 <div class="contact-card">
                     <div class="contact-icon">✉</div>
                     <div class="contact-details">
-                        <h3>メールサポート</h3>
-                        <p>お問い合わせやバグ報告、仕事用ライセンスについてのご相談などは、以下のメールアドレスよりお気軽にご連絡ください。</p>
-                        <!-- ユーザーが編集しやすいようプレースホルダーに設定 -->
+                        <h3>Email Support</h3>
+                        <p>For support, business inquiries, or troubleshooting, please feel free to reach out to us at our dedicated email address.</p>
+                        <!-- PlaceHolder email -->
                         <a href="mailto:jp.yoshino7@gmail.com">jp.yoshino7@gmail.com</a>
                     </div>
                 </div>
@@ -272,33 +254,33 @@
         </section>
 
         <section>
-            <h2>❓ よくある質問 (FAQ)</h2>
+            <h2>❓ Frequently Asked Questions (FAQ)</h2>
             
             <div class="faq-item">
-                <div class="faq-q">アプリ画面が黒いままで動作しません。</div>
+                <div class="faq-q">The app screen is black and does not capture anything.</div>
                 <div class="faq-a">
-                    本アプリのApple Log撮影機能は、iPhone 15 Pro / 15 Pro Max 以降のプロモデル専用の高度なハードウェア要件を必要とします。非対応機種やiOSシミュレータではカメラ映像が取得できず、画面が黒い状態になります。お手持ちのデバイスが対応機種であるかご確認ください。
+                    Loga's Apple Logスチルキャプチャ relies on high-end hardware streams built into specific iPhone Pro series devices (iPhone 15 Pro / 15 Pro Max and newer). On incompatible devices or the iOS simulator, the viewfinder remains black. Please verify that your device supports native Apple Log recording.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">保存される TIFF 画像のサイズが非常に大きいです。</div>
+                <div class="faq-q">Saved TIFF images are consuming a massive amount of storage.</div>
                 <div class="faq-a">
-                    TIFF画像はApple Log本来のダイナミックレンジ情報（10-bit/16-bit）を劣化させることなく無圧縮で保存するため、1枚あたり約20MB以上の容量を消費します。ストレージ残量が気になる場合は、アプリ内設定画面から「オリジナルTIFF保存」をオフにし、「LUT適用済みJPEG保存」のみに変更してご使用ください。
+                    TIFF files preserve 10-bit/16-bit uncompressed high-fidelity sensor information with zero compression artifacts, which consumes approximately 20MB+ per frame. If you want to conserve storage, go to the App's local settings and turn off "Save Original TIFF", using "Save LUT Graded JPEG" only.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">カスタムLUTはどのようなフォーマットに対応していますか？</div>
+                <div class="faq-q">What format does Custom LUT support?</div>
                 <div class="faq-a">
-                    業界標準の `.cube` フォーマット（3D LUT、格子サイズ16〜64推奨）に対応しています。ファイルアプリを介してお好きなLUTファイルを無制限にインポート可能です。
+                    Loga supports industry-standard `.cube` 3D LUT files (recommended grid sizes 16 to 64). You can import unlimited custom LUTs directly from your Files app.
                 </div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-q">カメラロールへのアクセスを許可するよう求められます。</div>
+                <div class="faq-q">Why does the App request Camera and Photo Library permissions?</div>
                 <div class="faq-a">
-                    撮影した高品質な写真データをお使いのiPhoneに書き出し、またアプリ内で最新のサムネイルを表示するために、写真ライブラリへのアクセス（追加および読み込み）を許可する必要があります。本アプリはオフラインで動作し、いかなるデータも外部へ送信しないため安心してお使いいただけます。
+                    Camera access is required to capture the high-end Apple Log stream. Photo Library access is required to save the captured JPEGs/TIFFs safely to your native Camera Roll and retrieve your latest thumbnail. Loga operates completely offline and never transmits any data to external servers, so your privacy is 100% secure.
                 </div>
             </div>
         </section>
